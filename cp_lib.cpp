@@ -19,6 +19,6 @@ struct constant_p : public FunctionPass {
 }  // end of anonymous namespace
 
 char constant_p::ID = 0;
-static RegisterPass<Hello> X("libCP_given", "Constant Propagation Pass for Assignment",
+static RegisterPass<constant_p> X("libCP_given", "Constant Propagation Pass for Assignment",
                              false /* Only looks at CFG */,
                              false /* Analysis Pass */);
