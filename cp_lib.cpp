@@ -9,7 +9,7 @@ using namespace llvm;
 namespace {
 struct constant_p : public FunctionPass {
   static char ID;
-  Hello() : FunctionPass(ID) {}
+  constant_p() : FunctionPass(ID) {}
 
   bool runOnFunction(Function &F) override {
     // write your code here
